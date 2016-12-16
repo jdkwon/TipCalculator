@@ -1,14 +1,30 @@
-h2 { 
+h2, legend { 
 	font-size: 2.5em;
 	display: inline-block;
 }
 section {
 	margin: .5em;
 	font-family: 'Open Sans', sans-serif;
+	border: .2em;
 }
 .centered {
 	position: fixed;
-	top: 8%;
+	top: 15%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.displayTip {
+	position: fixed;
+	top: 20%;
+	left: 50;
+	transform: translate(-50%);
+}
+inputField {
+	shape-margin: .5em;
+}
+input[type="radio"] {
+	margin: 1em;
+}
+input[type="submit"] {
+	display: inline-block;
 }
