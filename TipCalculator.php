@@ -3,5 +3,5 @@
 $tipAmnt = 0.0;
 $tipEntered = "";
 
-print "<h2>Test</h2>";
+echo "<h2>Test</h2>";
 ?>
