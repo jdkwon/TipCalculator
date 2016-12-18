@@ -13,11 +13,9 @@
 				Dollar Amount: $<input class="inputField" type="text" id="dollar">
 				<br>
 				<?php
-					// $fmt = new NumberFormatter('en_US', NumberFormatter::PERCENT);
 					echo "<p>Tip Amount: </p>";
 					for($i = 10; $i <= 20; $i+=5) {
 						echo "<input type=\"radio\" id=\"tip$i\" name=\"tipInput\" value=\"$i\">$i%";
-						// echo $fmt->format($i);
 					}
 				?>
 				<br>
