@@ -35,6 +35,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 - Was not familiar with PHP and brushed on HTML/CSS.
+- Spend majority of the time trying to sync PHP with AJAX to display data without refreshing.
 
 ## License
 
