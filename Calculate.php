@@ -1,23 +1,31 @@
 <?php
 //define variables
-if(isset($_POST['tip'])) {
-	if($_POST['tip'] == "custom") {
-		$tipAmnt = (float)$_POST['customTip'] / 100;
+if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+	if(isset($_GET['tipInput'])) {
+			$tipAmnt = (float)$_GET['tipInput'];
+			$tipAmnt /= 100;	
 	}
 	else {
-		$tipAmnt = $_POST['tip'];	
+		$tipAmnt = 0.0;
 	}
+	if($_GET['dollar']) {
+		$dollar = (int)$_GET['dollar'];
+	}
+	else {
+		$dollar = 0;
+	}
+	// Calculations
+	// echo "$tipAmnt $dollar";
+	$tipTotal = $tipAmnt * $dollar;
+	$calculatedBill = $dollar + $tipTotal;
 }
 else {
-	$tipAmnt = 0.0;
-}
-if($_POST['dollar']) {
-	$dollar = (int)$_POST['dollar'];
-}
-else {
-	$dollar = 0;
+	echo "There is something wrong with the server.";
 }
 
-echo "<p>$tipAmnt, $dollar</p>";
+$printTip = "<p>Tip: $$tipTotal</p>";
+$printBill = "<p>Calculated Bill: $$calculatedBill";
 
+print($printTip);
+print($printBill);
 ?>

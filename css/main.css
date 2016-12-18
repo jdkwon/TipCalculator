@@ -15,16 +15,11 @@ section {
 }
 .displayTip {
 	position: fixed;
-	top: 20%;
-	left: 50;
+	top: 30%;
+	left: 50%;
 	transform: translate(-50%);
-}
-inputField {
-	shape-margin: .5em;
+	border: 10px;
 }
 input[type="radio"] {
 	margin: 1em;
-}
-input[type="submit"] {
-	display: inline-block;
 }
