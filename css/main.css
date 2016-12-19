@@ -23,3 +23,6 @@ section {
 input[type="radio"] {
 	margin: 1em;
 }
+p.error {
+	color: red;
+}
